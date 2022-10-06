@@ -21,8 +21,8 @@ export default function CategoryItem({ category }) {
 }
 
 CategoryItem.propTypes = {
-  category: {
+  category: PropTypes.shape({
     imageUrl: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired
-  }
+  }).isRequired
 };
